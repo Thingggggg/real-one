@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Turntable</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="player">
+
+  <div class="controls">
+    <button id="prev">◀</button>
+    <button id="play">▶</button>
+    <button id="next">▶▶</button>
+  </div>
+
+  <div class="deck" id="deck">
+
+    <div class="platter">
+      <div class="vinyl" id="vinyl">
+        <div class="label"></div>
+      </div>
+    </div>
+
+    <div class="arm" id="arm">
+      <div class="head"></div>
+    </div>
+
+  </div>
+
+  <h2 id="title">Click Play</h2>
+
+  <!-- PROGRESS BAR -->
+  <input type="range" id="progress" value="0" max="100">
+
+</div>
+
+<audio id="audio" preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
